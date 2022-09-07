@@ -80,6 +80,15 @@ public class Restaurant {
 
 
     public int get_price(String item1) {
+        for (Item item : menu) {
+            if (item.getName().equals(item1)) {
+                return item.getPrice();
+            }
+
+
+
+
+        }
 
 
 
@@ -87,10 +96,10 @@ public class Restaurant {
     }
     public int get_total(int price)
     {
-
-        return price;
+        int total=0;
+        total = total+price;
+        return total;
     }
-
 
 }
 

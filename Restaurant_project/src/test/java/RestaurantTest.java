@@ -97,13 +97,13 @@ class RestaurantTest {
     //List<Item> Item = new ArrayList<Item>();
 
    // Item
-    restaurant.getMenu().toString();
+
 //int total =0;
 int price1 = restaurant.get_price("Sweet corn soup");
     int price2 = restaurant.get_price("Vegetable lasagne");
-    int total = price1+price2;
-   // int total = restaurant.get_total(price1)+restaurant.get_total(price2);
-    assertNull(total);
+    //int total = price1+price2;
+   int total = restaurant.get_total(price1)+restaurant.get_total(price2);
+    assertNotNull(total);
 
 
 }
