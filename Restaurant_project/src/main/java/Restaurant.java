@@ -65,17 +65,32 @@ public class Restaurant {
         menu.remove(itemToBeRemoved);
     }
 
-    public void displayDetails() {
+    /*public void displayDetails() {
         System.out.println("Restaurant:" + name + "\n"
                 + "Location:" + location + "\n"
                 + "Opening time:" + openingTime + "\n"
                 + "Closing time:" + closingTime + "\n"
                 + "Menu:" + "\n" + getMenu());
 
-    }
+    }*/
 
     public String getName() {
         return name;
     }
+
+
+    public int get_price(String item1) {
+
+
+
+        return 0;
+    }
+    public int get_total(int price)
+    {
+
+        return price;
+    }
+
+
 }
 

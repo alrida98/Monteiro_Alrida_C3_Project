@@ -5,9 +5,10 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.when;
 
 class RestaurantTest {
     Restaurant restaurant;
@@ -90,6 +91,22 @@ class RestaurantTest {
         //user should be able to add items
         //Find total they are spending
 
+@Test
+    public void when_selecting_items_total_price_gets_added()
+{
+    //List<Item> Item = new ArrayList<Item>();
 
+   // Item
+    restaurant.getMenu().toString();
+//int total =0;
+int price1 = restaurant.get_price("Sweet corn soup");
+    int price2 = restaurant.get_price("Vegetable lasagne");
+    int total = price1+price2;
+   // int total = restaurant.get_total(price1)+restaurant.get_total(price2);
+    assertNull(total);
+
+
+}
     }
-    //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//    }<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

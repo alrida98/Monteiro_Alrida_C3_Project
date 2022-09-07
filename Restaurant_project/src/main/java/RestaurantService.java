@@ -6,12 +6,12 @@ public class RestaurantService {
     private static List<Restaurant> restaurants = new ArrayList<>();
    // public static Restaurant findRestaurantByName;
 
-    public RestaurantService()
-    {
-        LocalTime openingTime = LocalTime.parse("10:30:00");
-        LocalTime closingTime = LocalTime.parse("22:00:00");
-        restaurants.add(new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime));
-    }
+//    public RestaurantService()
+//    {
+//        LocalTime openingTime = LocalTime.parse("10:30:00");
+//        LocalTime closingTime = LocalTime.parse("22:00:00");
+//        restaurants.add(new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime));
+//    }
     public Restaurant findRestaurantByName(String restaurantName) {
 
         for (Restaurant restaurant : restaurants) {
